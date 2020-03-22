@@ -5,7 +5,7 @@
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
-
+  background-color: #ffffff;
   // Positioning context for the mobile navigation icon
   position: relative;
 }
@@ -37,12 +37,18 @@
   }
 
   .page-link {
-    color: $text-color;
+    
+    color: rgb(99, 97, 97);
     line-height: $base-line-height;
+    font-size: large;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &:hover {
+      color: $text-color;
     }
   }
 
@@ -81,6 +87,7 @@
     input ~ .trigger {
       clear: both;
       display: none;
+      color: #000000;
     }
 
     input:checked ~ .trigger {
@@ -170,15 +177,51 @@
   }
 }
 
+/**
+ * Index
+ */
+
+ .welcome-message {
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-left: 20%;
+  padding-top: 10%;
+  text-align: center;
+
+  h2 {
+    margin-top: 10px;
+  }
+ }
+/**
+ * Home
+ */
+.home {
+  display: block;
+  padding: $spacing-unit 0;
+  flex: 1;
+  background: #000000 url("#{$baseUrl}/imgs/tree.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 
 /**
  * Page content
  */
+
 .page-content {
+  display: block;
   padding: $spacing-unit 0;
   flex: 1;
+  background: url("#{$baseUrl}/imgs/tree-mirror.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
+
+
+
 
 .page-heading {
   @include relative-font-size(2);
