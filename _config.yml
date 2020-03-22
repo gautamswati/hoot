@@ -18,12 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: My Blog
-email: swati.mcs18.du@gmail.com.
+title: Hoot
+email: swati.mcs18.du@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Trying to create a blog to write about the books that I read.
-  Fingers crossed.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+  Weblog  
+baseurl: "/hoot" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  gautamswati
@@ -32,6 +31,10 @@ github_username:  gautamswati
 
 author: "Swati Gautam"
 linkedin_username: 
+
+header_pages: 
+  - books.html
+
 
 # Build settings
 theme: minima
