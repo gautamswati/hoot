@@ -35,10 +35,10 @@
   .menu-icon {
     display: none;
   }
-
+  
   .page-link {
     
-    color: rgb(99, 97, 97);
+    color: #000000;
     line-height: $base-line-height;
     font-size: large;
 
@@ -48,7 +48,7 @@
     }
 
     &:hover {
-      color: $text-color;
+      color: gray;
     }
   }
 
