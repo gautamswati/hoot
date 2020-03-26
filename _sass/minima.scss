@@ -43,6 +43,13 @@ $on-laptop:        800px !default;
   font-size: $base-font-size * $ratio;
 }
 
+@mixin relative-padding($top, $right, $botton, $left) {
+  padding-left: $spacing-unit * $top;
+  padding-right: $spacing-unit * $right;
+  padding-bottom: $spacing-unit * $bottom;
+  padding-left: $spacing-unit * $left;
+}
+
 @mixin relative-background-color($color) {
   color: $color;
   background-color: darken($color, 50%);
